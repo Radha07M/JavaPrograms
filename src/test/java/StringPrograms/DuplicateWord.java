@@ -1,4 +1,4 @@
-package BasicPrograms;
+package StringPrograms;
 
 import java.util.*;
 

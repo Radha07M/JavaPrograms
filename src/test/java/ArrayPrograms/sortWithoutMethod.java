@@ -1,4 +1,4 @@
-package BasicPrograms;
+package ArrayPrograms;
 
 public class sortWithoutMethod {
 
