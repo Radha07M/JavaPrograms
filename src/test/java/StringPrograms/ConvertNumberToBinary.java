@@ -1,7 +1,16 @@
 package StringPrograms;
 
 public class ConvertNumberToBinary {
-
+	public void print() {
+		try {
+			
+		}
+		finally {
+			System.out.println("");
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num=10,count=0;
@@ -14,5 +23,11 @@ public class ConvertNumberToBinary {
 		}
 		System.out.println("Equivalent Binary String of number: "+num+" is : "+strBinary);
 		System.out.println("No of 1s in the binary String is: "+count);
+		
+		
+		
 	}
 }
+
+
+
