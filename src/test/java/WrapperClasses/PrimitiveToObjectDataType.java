@@ -34,3 +34,5 @@ public class PrimitiveToObjectDataType {
 		System.out.println("char converted to Wrapper Integer Object: "+ wInterger2);
 	}
 }
+
+
