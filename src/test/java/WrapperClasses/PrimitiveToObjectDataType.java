@@ -1,11 +1,25 @@
 package WrapperClasses;
 
+import java.lang.reflect.Method;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /* This is possible to convert primitive number data type to any Object number Data type
  */
 public class PrimitiveToObjectDataType {
 
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void convertPrimitiveToObject() {
 		// TODO Auto-generated method stub

@@ -1,7 +1,10 @@
 package BasicPrograms;
 
+import java.lang.reflect.Method;
 import java.util.Scanner;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
@@ -9,6 +12,16 @@ import org.testng.annotations.Test;
  * Example- 2, 3, 5, 7, 11, 13, 17.... are the prime numbers.
  */
 public class PrimeNumber {
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void primNumber() {
 		Scanner sn = new Scanner(System.in);

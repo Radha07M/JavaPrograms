@@ -1,13 +1,26 @@
 package LeetCode;
 
+import java.lang.reflect.Method;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class DateDiffCalculator {
 
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void dateDiffernceCalculator() {
 		@SuppressWarnings("resource")

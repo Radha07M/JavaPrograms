@@ -1,11 +1,24 @@
 package CollectionsPrograms;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class ListMethods {
 
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void listMethods() {
 		String str="I am confident. I have to be confident whether you have knowledge or not. Never loose your confident. Never give up";
