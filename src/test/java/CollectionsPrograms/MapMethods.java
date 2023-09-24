@@ -2,8 +2,11 @@ package CollectionsPrograms;
 
 import java.util.*;
 
+import org.testng.annotations.Test;
+
 public class MapMethods {
-	public static void main(String[] args) {
+	@Test
+	public void mapMethods() {
 		String str = "Dont stop till your goal is achieve. Dont give up. I am Confident. I am Confident.";
 		String[] strArr = str.split(" ");
 		

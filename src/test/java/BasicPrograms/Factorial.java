@@ -1,12 +1,13 @@
 package BasicPrograms;
 
+import org.testng.annotations.Test;
 
-//input= 1/1! + 2/2! + 3/3! + 4/4! + 5/5!
-//Output : 2.70833
 public class Factorial {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Test
+	//input= 1/1! + 2/2! + 3/3! + 4/4! + 5/5!
+	//Output : 2.70833
+	public void factorial() {
 		int n=5;
 		float fact=1;
 		float Sum=0.0f;
@@ -15,7 +16,22 @@ public class Factorial {
 			Sum=Sum+(i/fact);
 		}
 		
-		System.out.printf("%.5f",Sum);
+		System.out.printf("\n%.5f",Sum);
+	}
+	
+	@Test
+	//input= 1! + 2! + 3! + 4! + 5!
+	//Output : 153.00000
+	public void factorialSum() {
+		int n=5;
+		float fact=1;
+		float Sum=0.0f;
+		for(int i=1;i<=n;i++) {
+			fact=fact*i;
+			Sum=Sum+fact;
+		}
+		
+		System.out.printf("\n%.5f",Sum);
 	}
 
 }

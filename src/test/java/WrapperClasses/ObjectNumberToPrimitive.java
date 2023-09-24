@@ -1,8 +1,11 @@
 package WrapperClasses;
 
-public class ObjectNumberToPrimitive {
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) {
+public class ObjectNumberToPrimitive {
+	
+	@Test
+	public void convertObjectToPrimitive() {
 		Integer wInterger = new Integer(10);
 		int pInt = wInterger.intValue();
 		System.out.println("Wrapper Integer Object converted to int: "+ pInt);

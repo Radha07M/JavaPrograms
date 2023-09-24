@@ -1,8 +1,11 @@
 package StringPrograms;
 
+import org.testng.annotations.Test;
+
 public class ReverseEachWord {
 
-	public static void main(String[] args) {
+	@Test
+	public void reverseEachWord() {
 		// TODO Auto-generated method stub
 		String s = "Selenium Interview";
 		//Output = "muineleS weiv";

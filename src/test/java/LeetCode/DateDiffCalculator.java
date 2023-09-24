@@ -4,9 +4,12 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
+import org.testng.annotations.Test;
+
 public class DateDiffCalculator {
 
-	public static void main(String[] args) {
+	@Test
+	public void dateDiffernceCalculator() {
 		@SuppressWarnings("resource")
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Start Date");

@@ -1,10 +1,13 @@
 package WrapperClasses;
 
+import org.testng.annotations.Test;
+
 /* This is possible to convert primitive number data type to any Object number Data type
  */
 public class PrimitiveToObjectDataType {
 
-	public static void main(String[] args) {
+	@Test
+	public void convertPrimitiveToObject() {
 		// TODO Auto-generated method stub
 		int pIntNum = 10;
 		long pLongNum = 1078700000;

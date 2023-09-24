@@ -2,9 +2,12 @@ package CollectionsPrograms;
 
 import java.util.*;
 
+import org.testng.annotations.Test;
+
 public class ListMethods {
 
-	public static void main(String[] args) {
+	@Test
+	public void listMethods() {
 		String str="I am confident. I have to be confident whether you have knowledge or not. Never loose your confident. Never give up";
 		String[] wordArr = str.split(" ");
 		

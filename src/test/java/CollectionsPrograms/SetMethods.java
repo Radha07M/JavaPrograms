@@ -2,10 +2,12 @@ package CollectionsPrograms;
 
 import java.util.*;
 
+import org.testng.annotations.Test;
+
 public class SetMethods {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@Test
+	public void setMethods() {
 		String str="I am confident. Dont give up";		
 		String arrStr[] = str.split(" ");
 		

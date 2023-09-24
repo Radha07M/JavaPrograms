@@ -1,8 +1,11 @@
-package ArrayPrograms;
+package SortingAlgorithm;
+
+import org.testng.annotations.Test;
 
 public class sortWithoutMethod {
 
-	public static void main(String[] args) {
+	@Test
+	public void sortArray(String[] args) {
 		int[] arr= {1,6,2,7,4};
 
 		for(int i=0;i<arr.length;i++) {
