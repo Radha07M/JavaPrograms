@@ -11,35 +11,65 @@ public class MapMethods {
 		for(int i=0;i<strArr.length;i++) {
 			map1.put(strArr[i],i);
 		}
-		System.out.println(map1);
+		System.out.println("Display Data=> "+map1);
+		System.out.println("Display Data using entrySet()=> "+map1.entrySet());
+		System.out.println("Map size is=> "+map1.size());
 		
 		map1.remove("is");
-		System.out.println(map1);
+		System.out.println("Removed is using remove()=> "+map1);
+		
 		map1.remove("achieve.",6);
-		System.out.println(map1);
+		System.out.println("Removed achieve. using remove()=> "+map1);
+		
+		System.out.println("Map size is=> "+map1.size());
 		
 		if(map1.containsKey("Dont")) {
-			System.out.println("Value of Dont is-> "+map1.get("Dont"));
+			System.out.println("Value of key \'Dont\' using get()-> "+map1.get("Dont"));
 		}
 		
+		System.out.println("Is the Key goal present in the map using containsKey()-> "+map1.containsKey("goal"));
+		System.out.println("Is the Key radha present in the map using containsKey()-> "+map1.containsKey("radha"));
+		
+		System.out.println("Is the value 2 present in the map using containsValue()-> "+map1.containsValue(2));
+		System.out.println("Is the value 10 present in the map using containsValue()-> "+map1.containsValue(10));
+				
 		for(Map.Entry<String, Integer> entry:map1.entrySet()) {
-			System.out.println("Key= "+entry.getKey()+", value= "+entry.getValue());
+			System.out.println("using getKey() key= "+entry.getKey()+", using getValue() value= "+entry.getValue());
 		}
-		
-		map1.clear();
-		System.out.println("Removed all elements: "+map1);
 		
 		System.out.println("\n\nString=> "+str);
 		int count=1;
+		Map<String,Integer> map2 = new HashMap<String, Integer>();
 		for(int i=0;i<strArr.length;i++) {
-			if(map1.containsKey(strArr[i])) {
-				map1.put(strArr[i], count+1);
+			if(map2.containsKey(strArr[i])) {
+				map2.put(strArr[i], count+1);
 			}
 			else {
-				map1.put(strArr[i],count);
+				map2.put(strArr[i],count);
 			}
 		}
-		System.out.println("Find no of occurence of key: "+map1);
+		System.out.println("Map size is=> "+map2.size());
 		
+		System.out.println("Find no of occurence of key: "+map2);
+		
+		System.out.println("is both map1 and map2 equal=> "+map1.equals(map2));
+		
+		Set<String> keySet1 = new HashSet<String>();
+		keySet1=map2.keySet();
+		System.out.println("Key set of map2 using keySey()=> "+keySet1);
+		
+		Set<String> keySet2 = new HashSet<String>();
+		keySet2=map1.keySet();
+		System.out.println("Key set of map1 using keySey()=> "+keySet2);
+		
+		Map<String,Integer> map3 = new HashMap<String, Integer>();
+		map3.putAll(map1);
+		System.out.println("Added all elements from map1 to map3 using putAll()=> "+map3);
+		
+		map3.putIfAbsent("Radha", 1);
+		System.out.println("Added key and value if absent using putIfAbsent()=> "+map3);
+		
+		map1.clear();
+		System.out.println("Removed all elements: "+map1);
 	}
 }
