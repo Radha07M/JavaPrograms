@@ -23,19 +23,16 @@ public class DateDiffCalculator {
 	
 	@Test
 	public void dateDiffernceCalculator() {
-		@SuppressWarnings("resource")
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Start Date");
-		String startDate = sc.next();
-		System.out.println(startDate);
+		String startDate = "24/09/2023";
+		System.out.println("Start Date: "+startDate);
 		String[] startArr = startDate.split("/");
 		int startYear = Integer.parseInt(startArr[2]);
 		int startMonth = Integer.parseInt(startArr[1]);
 		int startday = Integer.parseInt(startArr[0]);
 		
 		System.out.println("Enter End Date");
-		String endDate = sc.next();
-		System.out.println(endDate);
+		String endDate = "27/09/2023";
+		System.out.println("End Date: "+endDate);
 		String[] endArr = endDate.split("/");
 		int endYear = Integer.parseInt(endArr[2]);
 		int endMonth = Integer.parseInt(endArr[1]);

@@ -19,7 +19,7 @@ public class sortWithoutMethod {
 	}
 	
 	@Test
-	public void sortArray(String[] args) {
+	public void sortArray() {
 		int[] arr= {1,6,2,7,4};
 
 		for(int i=0;i<arr.length;i++) {
