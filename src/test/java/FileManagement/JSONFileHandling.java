@@ -18,6 +18,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+/*
+ * Expectation=>
+ * {"firstName":"John","lastName":"Smith","age":25,
+ * "address":{"streetAddress":"21 2nd Street","city":"New York","state":"NY","postalCode":10021},
+ * "phoneNumbers":[{"type":"home","number":"212 555-1234"},{"type":"fax","number":"646 555-4567"}]}
+ */
 @SuppressWarnings("unchecked")
 public class JSONFileHandling {
 

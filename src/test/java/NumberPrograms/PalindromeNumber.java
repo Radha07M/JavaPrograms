@@ -7,9 +7,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
- * Convert a number to binary 
+ * Palimdrom number
  */
-public class ConvertNumberToBinary {
+public class PalindromeNumber {
 	
 	@BeforeMethod
 	public void beforeMethod(Method method) {
@@ -22,17 +22,21 @@ public class ConvertNumberToBinary {
 	}
 	
 	@Test
-	public void convertNumberToBinary() {
-		// TODO Auto-generated method stub
-		int num=10,count=0;
+	public void PalindromNumber() {
+		int number = 12321;
+		int reminder, sum=0;
+		int no=number;
 		
-		String strBinary = Integer.toBinaryString(num);
-		for(int i=0;i<strBinary.length();i++) {
-			if(strBinary.charAt(i)=='1') {
-				count++;
-			}
+		while(number>0) {
+			reminder = number%10;			
+			sum=sum*10+reminder;			
+			number = number/10;
 		}
-		System.out.println("Equivalent Binary String of number: "+num+" is : "+strBinary);
-		System.out.println("No of 1s in the binary String is: "+count);
+		if(no==sum) {
+			System.out.println(no+" is a palindrome number");
+		}
+		else {
+			System.out.println(no+" is not a palindrome number");
+		}
 	}
 }

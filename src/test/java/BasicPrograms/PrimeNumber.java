@@ -24,7 +24,7 @@ public class PrimeNumber {
 	
 	@Test
 	public void primNumber() {
-		int number = 17;
+		int number = 12;
 		
 		System.out.println("Entered number is- "+number);
 		int m=0,flag=0;
