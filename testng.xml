@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="CollectionsPrograms.OccurenceOfChar"/>
+      <class name="NumberPrograms.ConvertNumberToBinary"/>
+      <class name="BasicPrograms.PrimeNumber"/>
+      <class name="LeetCode.DateDiffCalculator"/>
+      <class name="StringPrograms.MaxConsecutiveRepeatingChar"/>
+      <class name="CollectionsPrograms.UncommonCharOf2String"/>
+      <class name="FileManagement.JSONFileHandling"/>
+      <class name="CollectionsPrograms.SetMethods"/>
+      <class name="FileManagement.TextFileHandling"/>
+      <class name="BasicPrograms.FibonacciSeries"/>
+      <class name="WrapperClasses.PrimitiveToObjectDataType"/>
+      <class name="NumberPrograms.PalindromeNumber"/>
+      <class name="StringPrograms.Swap2String"/>
+      <class name="NumberPrograms.ReverseNumber"/>
+      <class name="StringPrograms.CountOccrOfLetter"/>
+      <class name="StringPrograms.RemoveMatchCharIn2String"/>
+      <class name="CollectionsPrograms.MapMethods"/>
+      <class name="ArrayPrograms.RemoveDuplicateFromArray"/>
+      <class name="BasicPrograms.Factorial"/>
+      <class name="CollectionsPrograms.DuplicateWordInString"/>
+      <class name="CollectionsPrograms.ConvertArrayToListToSet"/>
+      <class name="FileManagement.PropertyFileHandling"/>
+      <class name="WrapperClasses.ObjectNumberToPrimitive"/>
+      <class name="CollectionsPrograms.ListMethods"/>
+      <class name="FileManagement.ExcelFileHandling"/>
+      <class name="SortingAlgorithm.sortWithoutMethod"/>
+      <class name="StringPrograms.ReverseEachWord"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

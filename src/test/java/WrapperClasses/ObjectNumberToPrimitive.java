@@ -20,7 +20,7 @@ public class ObjectNumberToPrimitive {
 	
 	@Test
 	public void convertObjectToPrimitive() {
-		Integer wInterger = new Integer(10);
+		Integer wInterger = new Integer(10);	//Object
 		int pInt = wInterger.intValue();
 		System.out.println("Wrapper Integer Object converted to int: "+ pInt);
 		
@@ -60,7 +60,7 @@ public class ObjectNumberToPrimitive {
 		
 		char str1= 'X';
 		String ch = String.valueOf(str1);
-		
+		System.out.println("X= "+ch);
 	}
 
 }

@@ -35,6 +35,19 @@ public class ReverseEachWord {
 			}
 			final1 = final1+" "+temp;
 		}
-		System.out.println("Output: -"+final1);
+		System.out.println("Output: "+final1);
+	}
+	
+	@Test
+	public void reverseString() {
+		// TODO Auto-generated method stub
+		String s = "Selenium";
+	
+		String final1="";
+		for(int i=s.length()-1; i>=0;i--){
+			char ch = s.charAt(i);
+			final1 = final1 + String.valueOf(ch);
+		}
+		System.out.println("Output: "+final1);
 	}
 }
