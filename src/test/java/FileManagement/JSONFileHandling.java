@@ -78,7 +78,7 @@ public class JSONFileHandling {
 		try {
 			FileWriter file = new FileWriter(".//src//test//resources//TestData//jsonData.json");
 			file.write(jsonData.toJSONString());
-			file.flush();
+			file.flush();	//It is used to flushes the data of FileWriter.
 			file.close();
 			
 		} catch (IOException e) {
