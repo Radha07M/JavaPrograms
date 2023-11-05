@@ -1,13 +1,26 @@
 package StringPrograms;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
  * LIFO - Last In First Out
  */
 public class BalancedBrackets {
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void BalanacedBrackets1() {
 		String str = "{[]()}";

@@ -1,8 +1,11 @@
 package StringPrograms;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
@@ -11,6 +14,16 @@ import org.testng.annotations.Test;
  * https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html
  */
 public class CountOccrOfLetter {
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void OccurenceOfCharacter() {
 		String str="Selenium Tutorials";

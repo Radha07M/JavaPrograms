@@ -1,14 +1,26 @@
 package ArrayPrograms;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
  * Remove Duplicate element from array
  */
 public class RemoveDuplicateFromArray {
-
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void RemoveDuplicateElementFromArray() {
 		int[] arr = {10,2,7,3,2,7,1};

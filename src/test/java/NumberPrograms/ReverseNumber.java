@@ -28,14 +28,11 @@ public class ReverseNumber {
 		
 		while(number>0) {
 			reminder = number%10;
-			System.out.println(reminder);
 			
 			sum=sum*10+reminder;
-			System.out.println(sum);
 			
 			number = number/10;
-			System.out.println(number);
-			System.out.println("------------");
 		}
+		System.out.println("Reverse Num:" +sum);
 	}
 }

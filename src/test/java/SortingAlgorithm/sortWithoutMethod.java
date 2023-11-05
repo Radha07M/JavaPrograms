@@ -1,6 +1,7 @@
 package SortingAlgorithm;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -31,7 +32,14 @@ public class sortWithoutMethod {
 					arr[j]=temp;
 				}
 			}
-			System.out.println(arr[i]);
 		}
+		System.out.println(Arrays.toString(arr));
+	}
+	
+	@Test
+	public void sortArrayWithMethod() {
+		int[] arr= {1,6,2,7,4};
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
 	}
 }

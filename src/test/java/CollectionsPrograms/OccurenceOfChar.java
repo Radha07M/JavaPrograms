@@ -1,5 +1,6 @@
 package CollectionsPrograms;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +10,15 @@ import org.testng.annotations.*;
  * Find a no. of occurrence of each character in given String
  */
 public class OccurenceOfChar {
-
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
 	@Test
 	public void OccurenceOfCharacter() {
 		String str="Selenium Tutorials";

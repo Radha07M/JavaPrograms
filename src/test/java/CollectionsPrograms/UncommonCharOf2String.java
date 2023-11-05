@@ -1,7 +1,10 @@
 package CollectionsPrograms;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 /*
  * Find uncommon characters of the two strings
@@ -9,6 +12,16 @@ import org.testng.annotations.Test;
  * Output: b c l p r
  */
 public class UncommonCharOf2String {
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void UncommonCharInString() {
 	

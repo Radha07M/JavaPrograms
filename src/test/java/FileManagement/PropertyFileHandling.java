@@ -36,7 +36,7 @@ public class PropertyFileHandling {
 			prop.put("lastName","Smith");
 			
 			FileOutputStream fileOut = new FileOutputStream(new File(".//src//test//resources//TestData//propertyFile.properties"));
-			prop.store(fileOut, "Property file created and store the data");
+			prop.store(fileOut, "Property file created and store the data"); 	//Add data to property file
 			System.out.println("Property file created and store the data");
 		}
 		catch(IOException e) {
@@ -49,7 +49,7 @@ public class PropertyFileHandling {
 		try {
 			FileInputStream fileIn = new FileInputStream(new File(".//src//test//resources//TestData//propertyFile.properties"));
 			Properties prop = new Properties();
-			prop.load(fileIn);
+			prop.load(fileIn);		//load a property file
 			
 			String firstName = prop.getProperty("firstName");
 			System.out.println("First Name: "+firstName);

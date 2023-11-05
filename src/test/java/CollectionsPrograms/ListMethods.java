@@ -24,6 +24,9 @@ public class ListMethods {
 		String str="I am confident. I have to be confident whether you have knowledge or not. Never loose your confident. Never give up";
 		String[] wordArr = str.split(" ");
 		
+		List<String> arrToList = Arrays.asList(wordArr);
+		System.out.println("Converted Array to List using Arrays.asList()-> "+arrToList);
+		
 		List<String> list = new ArrayList<String>();
 		for(String word:wordArr) {
 			list.add(word);		///Add data into list

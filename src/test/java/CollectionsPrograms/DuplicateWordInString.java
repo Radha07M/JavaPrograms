@@ -57,5 +57,6 @@ public class DuplicateWordInString {
 		}
 		System.out.println("Input: "+s);
 		System.out.println("Output: "+duplicates);
+		System.out.println("WordSet: "+wordSet);
 	}
 }

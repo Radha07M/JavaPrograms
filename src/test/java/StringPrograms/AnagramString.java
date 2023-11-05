@@ -1,7 +1,10 @@
 package StringPrograms;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 /*
@@ -9,12 +12,23 @@ import org.testng.annotations.Test;
  * two String is called anagram, if they contain the same characters but on different order
  */
 public class AnagramString {
+	@BeforeMethod
+	public void beforeMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase started-----------\n");
+	}
+	
+	@AfterMethod
+	public void afterMethod(Method method) {
+		System.out.println("\n---------"+method.getName()+" Testcase completed-----------\n");
+	}
+	
 	@Test
 	public void angramString() {
 		String str1 = "Army";
-		String str2 = "Mapy";
+		String str2 = "Mary";
 		str1 = str1.toLowerCase();
 		str2= str2.toLowerCase();
+		
 		if(str1.length() == str2.length()) {
 			for(int i=0;i<str1.length();i++) {
 				char ch = str1.charAt(i);
@@ -38,7 +52,10 @@ public class AnagramString {
 	@Test
 	public void angramString2() {
 		String str1 = "Army";
-		String str2 = "Mapy";
+		String str2 = "Mary";
+		str1=str1.toLowerCase();
+		str2=str2.toLowerCase();
+		
 		char[] ch1 = str1.toCharArray();
 		char[] ch2 = str2.toCharArray();
 		
