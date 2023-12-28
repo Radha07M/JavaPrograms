@@ -2,6 +2,8 @@ package CollectionsPrograms;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -35,6 +37,21 @@ public class ConvertArrayToListToSet {
 
 		set1.addAll(list1);
 		
+		System.out.println(set1);
+	}
+	
+	@Test
+	public void StringArrayToListToSet() {
+		String str = "Excellent experience of Selenium concepts - Selenium WebDriver, Locators, WebElement Function, Junit, TestNG, Alert, Actions Class, Window Handler";
+		String[] str2 = str.split("-");
+		String str4 = str2[1].trim();
+		String[] strArr = str4.split(", ");
+
+		List<String> list1 = Arrays.asList(strArr);
+		System.out.println(list1);
+		
+		Set<String> set1 = new HashSet<String>(list1); //OR 
+		//set1.addAll(list1); //addAll
 		System.out.println(set1);
 	}
 }
